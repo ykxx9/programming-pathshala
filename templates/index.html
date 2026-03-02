@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Renaissance Replica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logos/pp.svg') }}" alt="Programming Pathshala Logo">
+            </div>
+
+            <nav class="nav-links">
+                <a href="#">Summer Training</a>
+
+                <div class="dropdown">
+                    <button class="nav-btn">Courses ▾</button>
+
+                    <div class="dropdown-menu">
+                        <a href="#">Interview Preparation</a>
+                        <a href="#">System Design</a>
+                        <a href="#">Full Stack Dev</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="nav-btn">Code Everyday ▾</button>
+
+                    <div class="dropdown-menu">
+                        <a href="#">YouTube</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">Community</a>
+                    </div>
+                </div>
+
+                <a href="#">Trainings</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <button class="login-btn">Log In</button>
+                <button class="trial-btn">Start 7-Days Free Trial</button>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-left">
+                <div class="badge">
+                    RENAISSANCE PLUS
+                </div>
+
+                <h1 class="hero-title">
+                    CRACK YOUR NEXT CODING <br>
+                    ROUND WITH <span class="highlight"><em>SYSTEM DESIGN</em></span>
+                </h1>
+
+                <p class="hero-subtext">
+                    All Courses in one Subscription | Starts @3,333/per month
+                </p>
+
+                <div class="features">
+                    <span>👥 1 on 1 mentorship</span>
+                    <span>🎓 Engineered for Career Transformation</span>
+                    <span>📚 Mock Interviews & Assessments</span>
+                    <span>📈 Performance Based Referrals</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary">Start 7-Days Free Trial</button>
+                    <button class="btn-outline">View Course Curriculum</button>
+                </div>
+            </div>
+
+            <div class="hero-form">
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name">
+
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number">
+
+                    <p class="form-note">
+                        We have a strict no-spam policy and will only contact you regarding your application.
+                    </p>
+
+                    <button type="submit" class="form-btn">
+                        Request a Callback!
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="company-heading-wrapper">
+        <h3 class="company-heading">
+            Our Students are placed at:
+        </h3>
+    </div>
+
+    <section class="company-strip">
+        <div class="company-logos">
+
+            <a href="https://www.flipkart.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/flipkart-logo.svg') }}" alt="Flipkart">
+            </a>
+
+            <a href="https://www.adobe.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/adobe-logo.svg') }}" alt="Adobe">
+            </a>
+
+            <a href="https://www.microsoft.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/microsoft-logo.svg') }}" alt="Microsoft">
+            </a>
+
+            <a href="https://www.amazon.in" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/amazon-logo.svg') }}" alt="Amazon">
+            </a>
+
+            <a href="https://www.google.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/google-logo.svg') }}" alt="Google">
+            </a>
+
+            <a href="https://razorpay.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/razorpay-logo.svg') }}" alt="Razorpay">
+            </a>
+
+            <a href="https://paytm.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/paytm-logo.svg') }}" alt="Paytm">
+            </a>
+
+            <a href="https://www.oracle.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/logos/oracle-logo.svg') }}" alt="Oracle">
+            </a>
+
+        </div>
+    </section>
+
+    <section class="stories-section">
+
+        <h2 class="stories-heading">
+            Stories of People Who Started Where You Are!
+        </h2>
+
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+
+        <div class="stories-wrapper">
+
+            <label for="slide1" class="arrow left">&#10094;</label>
+            <label for="slide2" class="arrow right">&#10095;</label>
+
+            <div class="stories-mask">
+                <div class="stories-track">
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="story-card">
+                        <div class="card-header">
+                            <img src="your-image-1.jpg" class="profile-img">
+                            <div class="card-info">
+                                <h4>Chetan Verma</h4>
+                                <div class="role">
+                                    <span>SDE</span>
+                                    <span class="company-name">CodeNation</span>
+                                </div>
+                            </div>
+                            <div class="linkedin-icon">in</div>
+                        </div>
+                        <p>
+                            Thanks to the remarkable course – Low Level Design, I am now skilled at navigating complex
+                            architectural challenges, evaluating multiple solutions with precision, and making informed
+                            decisions by weighing their respective advantages and disadvantages.
+                        </p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="story-card">
+                        <div class="card-header">
+                            <img src="your-image-2.jpg" class="profile-img">
+                            <div class="card-info">
+                                <h4>Balvinder Kaur</h4>
+                                <div class="role">
+                                    <span>SDE</span>
+                                    <span class="company-name">Palo Alto</span>
+                                </div>
+                            </div>
+                            <div class="linkedin-icon">in</div>
+                        </div>
+                        <p>
+                            The course covers everything in depth and in a very structured way. There is never enough to
+                            learn and grow. I felt very prepared for my interviews after being a part of this course,
+                            and could enhance my DSA and problem solving skills in greater depth.
+                        </p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="story-card">
+                        <div class="card-header">
+                            <img src="your-image-3.jpg" class="profile-img">
+                            <div class="card-info">
+                                <h4>Ayush Srivastava</h4>
+                                <div class="role">
+                                    <span>SDE</span>
+                                    <span class="company-name">PayPal</span>
+                                </div>
+                            </div>
+                            <div class="linkedin-icon">in</div>
+                        </div>
+                        <p>
+                            Fortunately, came across Programming Pathshala on Quora and I was amazed to see awesome
+                            reviews. I went through the website and checked the Curriculum, and moreover the fee of the
+                            course was in my budget.
+                        </p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="story-card">
+                        <div class="card-header">
+                            <div class="profile-img"></div>
+                            <div class="card-info">
+                                <h4>Riya Sharma</h4>
+                                <div class="role">
+                                    <span>SDE</span>
+                                    <span class="company-name">Amazon</span>
+                                </div>
+                            </div>
+                            <div class="linkedin-icon">in</div>
+                        </div>
+                        <p>
+                            System design sessions gave me deep clarity. Mock interviews were extremely realistic.
+                        </p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="story-card">
+                        <div class="card-header">
+                            <div class="profile-img"></div>
+                            <div class="card-info">
+                                <h4>Kunal Singh</h4>
+                                <div class="role">
+                                    <span>Developer</span>
+                                    <span class="company-name">Microsoft</span>
+                                </div>
+                            </div>
+                            <div class="linkedin-icon">in</div>
+                        </div>
+                        <p>
+                            The 600+ problem practice track gave me very strong DSA depth and pattern recognition.
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="stories-bottom">
+            <a href="https://www.linkedin.com/" target="_blank" class="stories-btn">
+                Read 500+ Stories ↗
+            </a>
+        </div>
+
+    </section>
+
+    <section class="career-section">
+        <div class="career-container">
+
+            <h2 class="career-heading">Career Accelerators!</h2>
+
+            <div class="career-grid-top">
+
+                <div class="card1">
+                    <div class="card1-text">
+                        <h3>Learn, Practice, Build</h3>
+                        <p>
+                            500+ lectures to learn, 600 problems to practice, and 3 projects
+                            to showcase your skills.
+                        </p>
+                    </div>
+                    <div class="card1-img">
+                        <img src="{{ url_for('static', filename='images/cards/c1.png') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="card2-text">
+                        <h3>Personalized Plans & Performance Based Referrals</h3>
+                        <p>
+                            Unlock personalized learning paths and exclusive referral perks
+                            to accelerate your growth.
+                        </p>
+                    </div>
+                    <div class="card2-img">
+                        <img src="{{ url_for('static', filename='images/cards/c2.png') }}" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="career-grid-bottom">
+
+                <div class="card3">
+                    <div class="card3-text">
+                        <div class="c3-text">
+                            <h3>24/7 Doubt Resolution</h3>
+                            <p>
+                                Instant help from our teaching assistants or mentors.
+                                Your doubts solved round the clock with expert support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card3-img">
+                        <div class="c3-img-box">
+                            <img src="{{ url_for('static', filename='images/cards/c3.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card4">
+                    <div class="card4-text">
+                        <h3>Certificate on Completion</h3>
+                        <p>
+                            Earn a recognized certificate to showcase your skills
+                            and boost your career after course completion.
+                        </p>
+                    </div>
+                    <div class="card4-img">
+                        <img src="{{ url_for('static', filename='images/cards/c4.png') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="card5">
+                    <div class="card5-text">
+                        <h3>Mentorships & Mock Interviews</h3>
+                        <p>
+                            Get expert mentorship and gain access to top-quality
+                            mock assessments and realistic mock interviews.
+                        </p>
+                    </div>
+                    <div class="card5-img">
+                        <img src="{{ url_for('static', filename='images/cards/c5.png') }}" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="curriculum-section">
+
+        <h2 class="curriculum-heading">Course Curriculum</h2>
+
+        <input type="radio" name="tabs" id="tab1" checked>
+        <input type="radio" name="tabs" id="tab2">
+        <input type="radio" name="tabs" id="tab3">
+        <input type="radio" name="tabs" id="tab4">
+        <input type="radio" name="tabs" id="tab5">
+
+        <div class="tab-buttons">
+            <label for="tab1" class="tab-btn">DSA</label>
+            <label for="tab2" class="tab-btn">LLD & Concurrency</label>
+            <label for="tab3" class="tab-btn">Full Stack Development</label>
+            <label for="tab4" class="tab-btn">System Design</label>
+            <label for="tab5" class="tab-btn">Backend in Springboot</label>
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-panel panel1">
+
+                <div class="curriculum-grid">
+
+                    <div class="module-list">
+                        <div class="module active">
+                            <small>Module 1</small>
+                            <h4>Begin with Programming</h4>
+                            <p>Stack, queues, linked list and trees</p>
+                        </div>
+
+                        <div class="module">
+                            <small>Module 2</small>
+                            <h4>Gearing Up</h4>
+                            <p>Recursion, Time Complexity</p>
+                        </div>
+
+                        <div class="module">
+                            <small>Module 3</small>
+                            <h4>Fundamental Algorithms</h4>
+                            <p>Sorting, Searching</p>
+                        </div>
+
+                        <div class="module">
+                            <small>Module 4</small>
+                            <h4>Fundamental Data Structures</h4>
+                            <p>Stack, queues, linked list and trees</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-box">
+
+                        <div class="lesson">
+                            <span>1: Introduction To Programming</span>
+                            <a href="#">Preview ▶</a>
+                        </div>
+
+                        <div class="lesson">
+                            <span>2: Data Types</span>
+                            <a href="#">Preview ▶</a>
+                        </div>
+
+                        <div class="lesson locked">
+                            <span>3: Input Output</span>
+                            <span>🔒</span>
+                        </div>
+
+                        <div class="lesson locked">
+                            <span>4: Operators</span>
+                            <span>🔒</span>
+                        </div>
+
+                        <div class="lesson locked">
+                            <span>5: Decision Making</span>
+                            <span>🔒</span>
+                        </div>
+
+                        <button class="show-more">Show more ⌄</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-panel panel2">
+                <p>LLD content here...</p>
+            </div>
+            <div class="tab-panel panel3">
+                <p>Full Stack content here...</p>
+            </div>
+            <div class="tab-panel panel4">
+                <p>System Design content here...</p>
+            </div>
+            <div class="tab-panel panel5">
+                <p>Springboot content here...</p>
+            </div>
+
+        </div>
+
+        <button class="pricing-btn">View Pricing ⌄</button>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="#">Join our Community</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>POPULAR PROGRAMS</h4>
+
+                <div class="footer-card">
+                    <div class="footer-thumb">
+                        <img src="{{ url_for('static', filename='images/pp/img1.png') }}" alt="">
+                    </div>
+                    <a href="#">Renaissance for Top Tech Companies</a>
+                </div>
+
+                <div class="footer-card">
+                    <div class="footer-thumb">
+                        <img src="{{ url_for('static', filename='images/pp/img2.png') }}" alt="">
+                    </div>
+                    <a href="#">Become SSE & Crack Design Rounds</a>
+                </div>
+
+                <div class="footer-card">
+                    <div class="footer-thumb">
+                        <img src="{{ url_for('static', filename='images/pp/img3.png') }}" alt="">
+                    </div>
+                    <a href="#">Become Java Spring Boot Backend Developer</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>MORE COURSES</h4>
+                <ul>
+                    <li><a href="#">Crack Coding Rounds in DSA</a></li>
+                    <li><a href="#">Python Essentials for ML & Web Dev</a></li>
+                    <li><a href="#">Master C++ for Interviews</a></li>
+                </ul>
+
+                <h4 class="footer-subheading">FOR BUSINESSES</h4>
+                <ul>
+                    <li><a href="#">Trainings for Universities & Corporations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT US</h4>
+
+                <ul class="contact-list">
+                    <li>
+                        <svg class="footer-icon" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.2c1 .3 2 .5 3 .5a1 1 0 011 1V21a1 1 0 01-1 1C10.1 22 2 13.9 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1 .2 2 .5 3a1 1 0 01-.2 1l-1.2 1.2z" />
+                        </svg>
+                        <a href="tel:+919871723495">+91 9871723495</a>
+                    </li>
+
+                    <li>
+                        <svg class="footer-icon" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2C8 2 5 5 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z" />
+                        </svg>
+                        <a href="https://maps.google.com/?q=Iconic+Corenthum+Tower+Noida" target="_blank">
+                            514, Iconic Corenthum Tower, Noida
+                        </a>
+                    </li>
+
+                    <li>
+                        <svg class="footer-icon" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <a href="mailto:help@programmingpathshala.com">
+                            help@programmingpathshala.com
+                        </a>
+                    </li>
+                </ul>
+
+                <h4 class="footer-subheading">SOCIAL LINKS</h4>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Programmingpathshala.1" target="_blank" class="circle">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.5 3h-2.9v7A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/school/programming-pathshala/" target="_blank" class="circle">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M4 3a2 2 0 100 4 2 2 0 000-4zM3 8h3v13H3V8zm7 0h3v2h.1a3.3 3.3 0 012.9-1.6c3.1 0 3.7 2 3.7 4.6V21h-3v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21h-3V8z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/programmingpathshala/" target="_blank" class="circle">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UC4uPfwRHPbYlmjNMiKIdWNg" target="_blank" class="circle">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21.8 8s-.2-1.5-.8-2.1c-.8-.8-1.8-.8-2.2-.9-3-.2-7.6-.2-7.6-.2s-4.6 0-7.6.2c-.4 0-1.4.1-2.2.9C.2 6.5 0 8 0 8s-.2 1.7-.2 3.4v1.6C-.2 14.7 0 16.5 0 16.5s.2 1.5.8 2.1c.8.8 1.9.8 2.4.9 1.8.2 7.6.2 7.6.2s4.6 0 7.6-.2c.4 0 1.4-.1 2.2-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.4V11.4C22 9.7 21.8 8 21.8 8zM9.5 14.5v-5l5 2.5-5 2.5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            All Rights Reserved © Programming Pathshala
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
